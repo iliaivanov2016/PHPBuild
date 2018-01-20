@@ -1,0 +1,31 @@
+{
+  "plugin_dir": "gravity_forms_mc_unique_id_generator",
+  "versions": [
+    {
+      "name":     "WORDPRESS",
+      "version":  "1.30",
+      "file_actions":  [
+        {"delete":        "log*.txt"},
+        {"delete":        "readme.MD"},
+        {"rename":        ["readme_wordpress.MD", "readme.txt"]},
+        {"replace":       "*.php"},
+        {"minify_js":     "assets/js/*.js"},
+        {"minify_css":    "assets/css/*.js"}
+      ],
+      "dir_actions": [
+        {"delete": "licenses"}
+      ]
+    },
+    {
+      "name": "MODCODING",
+      "version":  "1.30",
+      "file_actions":  [
+        {"delete":        "readme_wordpress.MD"},
+        {"replace":       "*.php"},
+        {"minify_js":     "assets/js/*.js"},
+        {"minify_css":    "assets/css/*.js"}
+      ],
+      "dir_actions": []
+    }
+  ]
+}
